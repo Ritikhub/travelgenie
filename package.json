@@ -15,7 +15,7 @@
     "react-scripts": "4.0.3"
   },
   "engines": {
-    "node": "20.15.1"  // Specify the version compatible with your application
+    "node": "14.x"
   },
   "keywords": ["travel", "frontend", "react"],
   "author": "Your Name",
