@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const axios = require('axios');
-require('dotenv').config(); // Add this line
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -15,7 +15,7 @@ app.post('/api/search', async (req, res) => {
 
   try {
     const gptApiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-    const apiKey = process.env.OPENAI_API_KEY;  // Read from environment variable
+    const apiKey = process.env.OPENAI_API_KEY;
 
     const response = await axios.post(
       gptApiUrl,
