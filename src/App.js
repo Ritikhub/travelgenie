@@ -1,11 +1,16 @@
+// src/App.js
 import React from 'react';
+import Header from './components/Header';
+import Search from './components/Search';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to TravelGenie</h1>
-      </header>
+      <Header />
+      <main>
+        <Search />
+      </main>
     </div>
   );
 }
