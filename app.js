@@ -1,3 +1,19 @@
+// Load environment variables from .env file
+require('dotenv').config();
+
+const express = require('express');
+const app = express();
+
+const apiKey = process.env.API_KEY;
+
+app.get('/travel', (req, res) => {
+    res.send(`Your API key is ${sk-proj-KRG9QrllYIIjqfqPaCFqT3BlbkFJ36Z8gFV8tPcqoWNRLxdI}`);
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+
 // app.js
 const express = require('express');
 const connectDB = require('./config/db');
