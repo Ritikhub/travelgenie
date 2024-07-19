@@ -1,13 +1,13 @@
 // src/components/Search.js
 import React, { useState } from 'react';
-import './Search.css';
+import './Search.css'; // Ensure this path is correct
 
 const Search = () => {
   const [prompt, setPrompt] = useState('');
   const [result, setResult] = useState('');
 
   const handleSearch = async () => {
-    const response = await fetch('https://travelgenie-gpt-backend.herokuapp.com/api/search', {
+    const response = await fetch('https://your-gpt-backend-url/api/search', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
