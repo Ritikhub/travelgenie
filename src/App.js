@@ -1,8 +1,7 @@
-// src/App.js
 import React from 'react';
 import Header from './components/Header';
 import Search from './components/Search';
-import './styles/App.css'; // Ensure this path is correct
+import './styles/App.css';
 
 function App() {
   return (

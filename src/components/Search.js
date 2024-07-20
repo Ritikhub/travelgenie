@@ -1,6 +1,5 @@
-// src/components/Search.js
 import React, { useState } from 'react';
-import './Search.css'; // Ensure this path is correct
+import './Search.css';
 
 const Search = () => {
   const [prompt, setPrompt] = useState('');
